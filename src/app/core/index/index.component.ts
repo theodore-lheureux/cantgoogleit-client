@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CantgoogleitService } from 'src/app/services/cantgoogleit.service';
 
 @Component({
   selector: 'app-index',
@@ -7,5 +8,7 @@ import { Component } from '@angular/core';
   ]
 })
 export class IndexComponent {
-
+  
+    constructor(private cantgoogleit: CantgoogleitService) { }
+  
 }
